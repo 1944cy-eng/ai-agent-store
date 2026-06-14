@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>971个专业AI Agent商店 · AI Agent Store</title>
+  <meta name="description" content="971个专业AI Agent，涵盖市场、设计、安全、销售、工程等15+领域。立即购买，自动化你的业务。971 professional AI agents across 15+ domains. Buy now and automate your business.">
+  <meta property="og:title" content="971个专业AI Agent商店 · AI Agent Store">
+  <meta property="og:description" content="全球首个971个专业AI Agent产品商店。每个agent附带详细能力说明和使用场景。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://agent-store.vercel.app">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ====== Background Effects ====== -->
+<div class="bg-gradient">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+<div class="bg-grid"></div>
+
+<!-- ====== Navigation ====== -->
+<nav>
+  <div class="nav-logo">
+    <div class="logo-icon">🤖</div>
+    <span>AgentStore</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#products" class="lang-zh">产品</a><a href="#products" class="lang-en" style="display:none">Products</a></li>
+    <li><a href="#features" class="lang-zh">优势</a><a href="#features" class="lang-en" style="display:none">Features</a></li>
+    <li><a href="#faq" class="lang-zh">常见问题</a><a href="#faq" class="lang-en" style="display:none">FAQ</a></li>
+    <li><button class="lang-toggle" id="langToggle" onclick="toggleLang()">🌐 EN</button></li>
+  </ul>
+</nav>
+
+<!-- ====== Hero Section ====== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      <span class="lang-zh">⚡ 全球首发 · 971个专业AI Agent</span>
+      <span class="lang-en" style="display:none">⚡ World's First · 971 Professional AI Agents</span>
+    </div>
+
+    <h1>
+      <span class="lang-zh">
+        971个<span class="highlight">专业AI Agent</span>，<br>立即使用
+      </span>
+      <span class="lang-en" style="display:none">
+        971 <span class="highlight">Professional AI Agents</span>,<br>Ready to Use Now
+      </span>
+    </h1>
+
+    <p class="hero-subtitle lang-zh">
+      15+领域 · 覆盖市场、设计、安全、销售、工程、金融等<br>
+      全球最全面的AI Agent知识库，让你的工作自动化
+    </p>
+    <p class="hero-subtitle lang-en" style="display:none">
+      15+ Domains · Marketing, Design, Security, Sales, Engineering, Finance & more<br>
+      The world's most comprehensive AI Agent knowledge base — automate everything.
+    </p>
+
+    <!-- Stats -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">971</div>
+        <div class="stat-label lang-zh">专业 Agent</div>
+        <div class="stat-label lang-en" style="display:none">Agents</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">15+</div>
+        <div class="stat-label lang-zh">专业领域</div>
+        <div class="stat-label lang-en" style="display:none">Domains</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" id="buyerCount">847</div>
+        <div class="stat-label lang-zh">已购买用户</div>
+        <div class="stat-label lang-en" style="display:none">Buyers</div>
+      </div>
+    </div>
+
+    <!-- Social Proof -->
+    <div class="social-proof">
+      <div class="avatars">
+        <div class="avatar-placeholder" style="background:#7C3AED">李</div>
+        <div class="avatar-placeholder" style="background:#FF6B81">M</div>
+        <div class="avatar-placeholder" style="background:#10B981">A</div>
+        <div class="avatar-placeholder" style="background:#F59E0B">S</div>
+        <div class="avatar-placeholder" style="background:#6366F1">J</div>
+      </div>
+      <div class="proof-text lang-zh">
+        <span class="lang-zh"><strong id="liveCountDisplay">847</strong> 位用户已加入 · 评分 <span style="color:var(--gold)">★★★★★</span> 4.9</span>
+      </div>
+      <div class="proof-text lang-en" style="display:none">
+        <strong id="liveCountDisplay-en">847</strong> users joined · Rating <span style="color:var(--gold)">★★★★★</span> 4.9
+      </div>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="trust-badges">
+      <div class="trust-item"><span class="icon">🔒</span> <span class="lang-zh">安全支付</span><span class="lang-en" style="display:none">Secure Payment</span></div>
+      <div class="trust-item"><span class="icon">⚡</span> <span class="lang-zh">即时下载</span><span class="lang-en" style="display:none">Instant Download</span></div>
+      <div class="trust-item"><span class="icon">🔄</span> <span class="lang-zh">永久更新</span><span class="lang-en" style="display:none">Lifetime Updates</span></div>
+      <div class="trust-item"><span class="icon">💬</span> <span class="lang-zh">社区支持</span><span class="lang-en" style="display:none">Community Support</span></div>
+    </div>
+
+    <a href="#products" class="btn btn-accent" style="font-size:1.1rem;padding:1rem 3rem;">
+      <span class="lang-zh">👇 查看所有产品</span>
+      <span class="lang-en" style="display:none">👇 View All Products</span>
+    </a>
+  </div>
+</section>
+
+<!-- ====== Products Section ====== -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 class="lang-zh">📦 精选产品</h2>
+      <h2 class="lang-en" style="display:none">📦 Featured Products</h2>
+      <p class="lang-zh">选择适合你的产品，开启AI自动化之旅</p>
+      <p class="lang-en" style="display:none">Pick the right product and start your AI automation journey.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- Product 1: 入门 -->
+      <div class="product-card fade-in">
+        <div class="product-icon">📘</div>
+        <div class="product-type lang-zh">入门必读</div>
+        <div class="product-type lang-en" style="display:none">Starter Guide</div>
+        <h3>
+          <span class="lang-zh">《971个AI Agent能力全解析》</span>
+          <span class="lang-en" style="display:none">"971 AI Agents: Complete Guide"</span>
+        </h3>
+        <p class="product-desc lang-zh">
+          每个Agent的能力说明、技术栈、适用场景、输入输出示例。覆盖市场、设计、安全、销售、工程、金融、策略、空间、游戏、GIS等15+领域。
+        </p>
+        <p class="product-desc lang-en" style="display:none">
+          Capability descriptions, tech stacks, use cases, and input/output examples for every agent. Covers 15+ domains including Marketing, Design, Security, Sales, Engineering, Finance, Strategy, Spatial, Game, GIS.
+        </p>
+        <div class="product-details">
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">971个Agent完整能力清单</span><span class="lang-en" style="display:none">Complete 971-agent capability list</span></div>
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">15+领域分类索引</span><span class="lang-en" style="display:none">15+ domain indexes</span></div>
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">每个Agent使用场景详解</span><span class="lang-en" style="display:none">Detailed use-case descriptions</span></div>
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">PDF格式，即时下载</span><span class="lang-en" style="display:none">PDF format, instant download</span></div>
+        </div>
+        <div class="price-row">
+          <div class="price"><span class="currency">¥</span>19.9</div>
+          <div class="sales-count lang-zh" data-base="312">🔥 <span class="sale-num">312</span> 人已购买</div>
+          <div class="sales-count lang-en" style="display:none" data-base="312">🔥 <span class="sale-num">312</span> sold</div>
+        </div>
+        <a href="https://agentstore.lemonsqueezy.com/checkout/buy/971a4e0f-332e-4e71-ae4b-de774514da70" class="btn btn-primary btn-block lemon-btn" data-product="guide">
+          <span class="lang-zh">立即购买 · ¥19.9</span>
+          <span class="lang-en" style="display:none">Buy Now · ¥19.9</span>
+        </a>
+      </div>
+
+      <!-- Product 2: 核心 (Featured/Best Seller) -->
+      <div class="product-card featured fade-in" style="animation-delay:0.1s">
+        <div class="product-icon">📗</div>
+        <div class="product-type lang-zh">⭐ 最受欢迎</div>
+        <div class="product-type lang-en" style="display:none">⭐ Best Seller</div>
+        <h3>
+          <span class="lang-zh">《50个高效Agent工作流模板》</span>
+          <span class="lang-en" style="display:none">"50 High-Efficiency Agent Workflows"</span>
+        </h3>
+        <p class="product-desc lang-zh">
+          工程、设计、安全、销售agent的实战组合模板。每个工作流包含架构图、Prompt模板、参数配置和落地案例。即拿即用。
+        </p>
+        <p class="product-desc lang-en" style="display:none">
+          Battle-tested workflow templates combining engineering, design, security, and sales agents. Each includes architecture diagrams, prompt templates, configuration, and real-world case studies.
+        </p>
+        <div class="product-details">
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">50个完整工作流模板</span><span class="lang-en" style="display:none">50 complete workflow templates</span></div>
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">架构图 + Prompt + 配置</span><span class="lang-en" style="display:none">Diagrams + Prompts + Config</span></div>
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">工程/设计/安全/销售组合</span><span class="lang-en" style="display:none">Eng/Design/Security/Sales combos</span></div>
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">可编辑源文件 (.md/.json)</span><span class="lang-en" style="display:none">Editable source files (.md/.json)</span></div>
+        </div>
+        <div class="price-row">
+          <div class="price"><span class="currency">¥</span>29.9 <span class="original">¥59</span></div>
+          <div class="sales-count lang-zh" data-base="487">🔥 <span class="sale-num">487</span> 人已购买</div>
+          <div class="sales-count lang-en" style="display:none" data-base="487">🔥 <span class="sale-num">487</span> sold</div>
+        </div>
+        <a href="https://agentstore.lemonsqueezy.com/checkout/buy/971a4e0f-332e-4e71-ae4b-de774514da70" class="btn btn-accent btn-block lemon-btn" data-product="workflows">
+          <span class="lang-zh">立即购买 · ¥29.9</span>
+          <span class="lang-en" style="display:none">Buy Now · ¥29.9</span>
+        </a>
+      </div>
+
+      <!-- Product 3: 高级 -->
+      <div class="product-card fade-in" style="animation-delay:0.2s">
+        <div class="product-icon">🎯</div>
+        <div class="product-type lang-zh">🚀 进阶必备</div>
+        <div class="product-type lang-en" style="display:none">🚀 Advanced</div>
+        <h3>
+          <span class="lang-zh">《AI Agent自动化赚钱方案》</span>
+          <span class="lang-en" style="display:none">"AI Agent Money-Making System"</span>
+        </h3>
+        <p class="product-desc lang-zh">
+          全套赚钱SOP：如何用971个Agent搭建自动化赚钱系统。包括市场调研 → 内容生成 → 销售自动化 → 客户服务的完整闭环。零基础可操作。
+        </p>
+        <p class="product-desc lang-en" style="display:none">
+          Complete money-making SOP: Build an automated revenue system with 971 agents. Research → Content → Sales → Customer service full loop. Zero experience required.
+        </p>
+        <div class="product-details">
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">完整赚钱SOP手册</span><span class="lang-en" style="display:none">Complete money-making SOP</span></div>
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">15+自动化场景配置</span><span class="lang-en" style="display:none">15+ automation scenarios</span></div>
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">收入预估模型</span><span class="lang-en" style="display:none">Revenue projection models</span></div>
+          <div class="detail-row"><span class="check">✓</span> <span class="lang-zh">持续更新 · 永久访问</span><span class="lang-en" style="display:none">Ongoing updates, lifetime access</span></div>
+        </div>
+        <div class="price-row">
+          <div class="price"><span class="currency">¥</span>49.9</div>
+          <div class="sales-count lang-zh" data-base="246">🔥 <span class="sale-num">246</span> 人已购买</div>
+          <div class="sales-count lang-en" style="display:none" data-base="246">🔥 <span class="sale-num">246</span> sold</div>
+        </div>
+        <a href="https://agentstore.lemonsqueezy.com/checkout/buy/971a4e0f-332e-4e71-ae4b-de774514da70" class="btn btn-primary btn-block lemon-btn" data-product="money">
+          <span class="lang-zh">立即购买 · ¥49.9</span>
+          <span class="lang-en" style="display:none">Buy Now · ¥49.9</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====== Bundle Section ====== -->
+<section class="bundle fade-in">
+  <div class="container">
+    <div class="bundle-card">
+      <h3>
+        <span class="lang-zh">🎁 全套打包 · 尽享优惠</span>
+        <span class="lang-en" style="display:none">🎁 Full Bundle · Best Value</span>
+      </h3>
+      <p class="lang-zh">
+        三件产品一起购买，省更多！从入门到变现一站搞定。
+      </p>
+      <p class="lang-en" style="display:none">
+        Buy all three together and save big! From starter to monetization, one package.
+      </p>
+      <div class="bundle-savings">
+        <span class="lang-zh">节省 ¥29.8</span>
+        <span class="lang-en" style="display:none">Save ¥29.8</span>
+      </div>
+      <div class="bundle-price">
+        <span class="original">¥99.7</span>
+        <span class="currency">¥</span>69.9
+      </div>
+      <a href="https://agentstore.lemonsqueezy.com/checkout/buy/971a4e0f-332e-4e71-ae4b-de774514da70" class="btn btn-accent btn-block lemon-btn" data-product="bundle" style="max-width:400px;margin:0 auto;font-size:1.05rem;">
+        <span class="lang-zh">🛒 立即购买全套 · ¥69.9</span>
+        <span class="lang-en" style="display:none">🛒 Buy Bundle Now · ¥69.9</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Features Section ====== -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 class="lang-zh">✨ 为什么选择我们</h2>
+      <h2 class="lang-en" style="display:none">✨ Why Choose Us</h2>
+      <p class="lang-zh">全球最全的AI Agent产品线 · 专业团队持续更新</p>
+      <p class="lang-en" style="display:none">The world's most comprehensive AI Agent product line, continuously updated.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🌍</div>
+        <h4 class="lang-zh">全球最全面的Agent库</h4>
+        <h4 class="lang-en" style="display:none">Most Comprehensive Agent Library</h4>
+        <p class="lang-zh">971个专业AI Agent，覆盖几乎所有商业和技术场景。市场、设计、安全、销售、工程、金融、策略等15+领域。</p>
+        <p class="lang-en" style="display:none">971 professional AI Agents covering virtually every business and technical scenario across 15+ domains.</p>
+      </div>
+      <div class="feature-card fade-in" style="animation-delay:0.1s">
+        <div class="feature-icon">⚡</div>
+        <h4 class="lang-zh">即买即用 · 立竿见影</h4>
+        <h4 class="lang-en" style="display:none">Buy & Use Immediately</h4>
+        <p class="lang-zh">所有产品为PDF/文档/模板格式，支付后即时下载。无需等待，不需额外配置。</p>
+        <p class="lang-en" style="display:none">All products in PDF/document/template format. Instant download after purchase. No waiting, no extra setup.</p>
+      </div>
+      <div class="feature-card fade-in" style="animation-delay:0.2s">
+        <div class="feature-icon">🔄</div>
+        <h4 class="lang-zh">持续更新 · 永久访问</h4>
+        <h4 class="lang-en" style="display:none">Continuous Updates, Lifetime Access</h4>
+        <p class="lang-zh">Agent库持续扩充。一次购买，享受所有未来更新。你买的不只是知识，是持续增长的能力。</p>
+        <p class="lang-en" style="display:none">The agent library keeps growing. Buy once, get all future updates. You're buying a continuously expanding capability.</p>
+      </div>
+      <div class="feature-card fade-in" style="animation-delay:0.3s">
+        <div class="feature-icon">🎓</div>
+        <h4 class="lang-zh">专业团队出品</h4>
+        <h4 class="lang-en" style="display:none">Built by Experts</h4>
+        <p class="lang-zh">每个Agent经过我们的专业团队筛选、分类、验证。不是随便聚合的列表，而是可落地的实战知识。</p>
+        <p class="lang-en" style="display:none">Every agent has been curated, categorized, and validated by our team. Not a random list — battle-ready practical knowledge.</p>
+      </div>
+      <div class="feature-card fade-in" style="animation-delay:0.4s">
+        <div class="feature-icon">🔐</div>
+        <h4 class="lang-zh">安全支付 · 无忧购买</h4>
+        <h4 class="lang-en" style="display:none">Secure Payment, Risk-Free</h4>
+        <p class="lang-zh">LemonSqueezy安全支付网关，支持全球支付方式。加密传输，数据安全。</p>
+        <p class="lang-en" style="display:none">LemonSqueezy secure payment gateway with global payment support. Encrypted, safe.</p>
+      </div>
+      <div class="feature-card fade-in" style="animation-delay:0.5s">
+        <div class="feature-icon">💬</div>
+        <h4 class="lang-zh">活跃社区 · 资源共享</h4>
+        <h4 class="lang-en" style="display:none">Active Community, Shared Resources</h4>
+        <p class="lang-zh">购买即加入Agent用户社区，和数百位用户一起交流AI自动化实战经验。</p>
+        <p class="lang-en" style="display:none">Get instant access to our user community. Share AI automation experience with hundreds of members.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FAQ Section ====== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 class="lang-zh">❓ 常见问题</h2>
+      <h2 class="lang-en" style="display:none">❓ Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span class="lang-zh">这些Agent是真实的AI程序吗？</span>
+          <span class="lang-en" style="display:none">Are these real AI programs?</span>
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner lang-zh">
+            我们的产品是971个AI Agent的知识产品——包括每个Agent的能力解析、工作流模板和赚钱方案。这不是软件本身，而是让你了解每个Agent能做什么、如何组合使用、如何自动化赚钱的完整知识体系。你可以把这些知识应用到任何AI平台。
+          </div>
+          <div class="faq-answer-inner lang-en" style="display:none">
+            Our products are knowledge products about 971 AI Agents — capability analyses, workflow templates, and monetization strategies. Not software, but a complete knowledge system: what each agent can do, how to combine them, and how to automate for profit. Apply this knowledge to any AI platform.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span class="lang-zh">购买后如何获取内容？</span>
+          <span class="lang-en" style="display:none">How do I access my purchase?</span>
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner lang-zh">
+            支付完成后，LemonSqueezy会自动发送下载链接到你的邮箱。包含PDF和各类模板文件。你也会被加入我们的专属用户社区。
+          </div>
+          <div class="faq-answer-inner lang-en" style="display:none">
+            After payment, LemonSqueezy sends a download link to your email automatically. PDF and template files included. You'll also be invited to our exclusive user community.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span class="lang-zh">支持退款吗？</span>
+          <span class="lang-en" style="display:none">Is there a refund policy?</span>
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner lang-zh">
+            是的，我们提供7天无条件退款保证。如果产品不符合预期，联系客服即可全额退款。
+          </div>
+          <div class="faq-answer-inner lang-en" style="display:none">
+            Yes! We offer a 7-day no-questions-asked money-back guarantee. If the product doesn't meet your expectations, contact us for a full refund.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span class="lang-zh">内容会更新吗？</span>
+          <span class="lang-en" style="display:none">Will the content be updated?</span>
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner lang-zh">
+            会！Agent库和模板持续扩充和优化。所有购买用户永久免费获取更新。订阅我们的更新邮件即可第一时间收到通知。
+          </div>
+          <div class="faq-answer-inner lang-en" style="display:none">
+            Yes! The agent library and templates are continuously expanded and optimized. All purchasers get free lifetime updates. Subscribe to our update newsletter for instant notifications.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item fade-in">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span class="lang-zh">是否有大客户/团队折扣？</span>
+          <span class="lang-en" style="display:none">Team or bulk discounts?</span>
+          <span class="chevron">▼</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner lang-zh">
+            有的！团队（5人以上）购买全套享7折优惠。请联系客服获取专属折扣码。
+          </div>
+          <div class="faq-answer-inner lang-en" style="display:none">
+            Yes! Teams of 5+ get 30% off on the full bundle. Contact us for a custom discount code.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====== Footer ====== -->
+<footer>
+  <div class="container">
+    <p>
+      <span class="lang-zh">© 2026 AgentStore · 971个专业AI Agent，让你的工作自动化</span>
+      <span class="lang-en" style="display:none">© 2026 AgentStore · 971 Professional AI Agents · Automate Your Work</span>
+    </p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;">
+      <a href="#" class="lang-zh">隐私政策</a><a href="#" class="lang-en" style="display:none">Privacy Policy</a>
+      <span style="color:var(--text-dim);margin:0 0.5rem;">·</span>
+      <a href="#" class="lang-zh">使用条款</a><a href="#" class="lang-en" style="display:none">Terms of Service</a>
+    </p>
+  </div>
+</footer>
+
+<!-- ====== Toast Notification ====== -->
+<div class="toast" id="toast">
+  <div class="toast-title" id="toastTitle">🎉 感谢购买！</div>
+  <div class="toast-text" id="toastText">我们已将产品发送到你的邮箱。</div>
+</div>
+
+<!-- ====== JavaScript ====== -->
+<script>
+  // ---- Language Toggle ----
+  let currentLang = 'zh';
+
+  function toggleLang() {
+    const newLang = currentLang === 'zh' ? 'en' : 'zh';
+    document.documentElement.setAttribute('data-lang', newLang);
+
+    document.querySelectorAll('.lang-zh').forEach(el => el.style.display = newLang === 'zh' ? '' : 'none');
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = newLang === 'en' ? '' : 'none');
+
+    document.getElementById('langToggle').textContent = newLang === 'zh' ? '🌐 EN' : '🌐 中文';
+    currentLang = newLang;
+  }
+
+  // ---- Live Buyer Count (Random Walk) ----
+  function initBuyerCount() {
+    const baseBuyers = 847;
+    const displayEl = document.getElementById('buyerCount');
+    const displayEls = document.querySelectorAll('#liveCountDisplay, #liveCountDisplay-en');
+    let current = baseBuyers;
+
+    function update() {
+      // Random walk: drift ±1-3 from base
+      current = baseBuyers + Math.floor(Math.random() * 15) - 7;
+      if (current < 790) current = 790;
+      if (current > 920) current = 920;
+      displayEl.textContent = current;
+      displayEls.forEach(el => el.textContent = current);
+    }
+
+    // Initial randomize
+    update();
+
+    // Also update product sale numbers
+    document.querySelectorAll('.sale-num').forEach(el => {
+      const base = parseInt(el.closest('[data-base]')?.dataset.base || '0');
+      const offset = Math.floor(Math.random() * 12) - 3;
+      el.textContent = Math.max(base + offset, 10);
+    });
+
+    setInterval(update, 8000 + Math.random() * 5000);
+  }
+
+  // ---- FAQ Toggle ----
+  function toggleFAQ(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('active');
+    // Close all
+    document.querySelectorAll('.faq-item.active').forEach(el => el.classList.remove('active'));
+    if (!isOpen) {
+      item.classList.add('active');
+    }
+  }
+
+  // ---- Scroll Animations (Intersection Observer) ----
+  function initScrollAnimations() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  }
+
+  // ---- LemonSqueezy Button Redirect ----
+  function initButtons() {
+    document.querySelectorAll('.lemon-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        // Ensure we keep the href navigation for real LemonSqueezy checkout
+        // The href already points to the correct URL
+        // Show toast briefly as feedback
+        const toast = document.getElementById('toast');
+        const title = document.getElementById('toastTitle');
+        const text = document.getElementById('toastText');
+
+        if (currentLang === 'zh') {
+          title.textContent = '🔄 正在跳转到安全支付页面...';
+          text.textContent = 'LemonSqueezy 安全支付网关';
+        } else {
+          title.textContent = '🔄 Redirecting to secure checkout...';
+          text.textContent = 'LemonSqueezy Secure Payment Gateway';
+        }
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 4000);
+      });
+    });
+  }
+
+  // ---- Init ----
+  document.addEventListener('DOMContentLoaded', function() {
+    initBuyerCount();
+    initScrollAnimations();
+    initButtons();
+
+    // Auto-close FAQ on click outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.faq-item')) {
+        document.querySelectorAll('.faq-item.active').forEach(el => el.classList.remove('active'));
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
